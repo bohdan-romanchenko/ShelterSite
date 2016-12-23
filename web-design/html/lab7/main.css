@@ -1,0 +1,39 @@
+input {
+  margin-bottom: 5px;
+}
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+    width: 80%;
+    height: 250px;
+    margin-bottom: 35px;
+    margin-top: 35px;
+}
+
+table td {
+    border: 1px solid black;
+}
+
+
+#first-table td:last-child {
+  width: 30%;
+}
+
+
+#second-table {
+  height: 320px;
+}
+
+#second-table tr:last-child {
+  height: 28%;
+}
+
+
+#third-table tr:nth-child(2n + 1) td:last-child {
+  width: calc(100% / 7);
+}
+
+#third-table tr:nth-child(2n) td:not(:first-child) {
+  width: calc(100% / 7 * 2);
+}
